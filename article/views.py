@@ -16,7 +16,7 @@ def create(request):
             form.save()
             return redirect('/news/')
         else:
-            error = 'Ошибка в форме'
+            error = 'Ошибка в форме ввода'
 
     form = ArticlesForm()
     return render(request, 'article/create.html', {'form': form,
