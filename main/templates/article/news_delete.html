@@ -1,0 +1,18 @@
+<!-- Форма для ввода статьи -->
+
+{% extends "news/base.html" %}
+
+{% block title %} Удаление статьи {% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1> Удаление статьи </h1>
+        <!-- Метод  action='check/check' указывает на какой странице будет обрабатываться вводимая информация-->
+        <form method="post">
+            <button class="btn btn-success" type="submit">Удалить</button>
+            <a href="{% url 'news-detail' articles.id %}" class="btn btn-warning">Назад</a>
+            {% csrf_token %}
+        </form>
+    </div>
+{% endblock %}

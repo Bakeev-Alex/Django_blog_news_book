@@ -1,0 +1,51 @@
+/* css base бокойвой панели */
+
+body {
+    background: #2c2c2c;
+}
+
+aside {
+    float: right;
+    background: #181818;
+    width: 22%;
+    padding: 2.2%;
+    color: #fff;
+    border-left: 5px solid #778899
+}
+
+aside img {
+    width: 70px;
+}
+
+aside .logo {
+    font-size: 22px;
+    font-weight: bolt;
+    position: relative;
+    top: -5px;
+}
+
+aside h3 {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+aside ul {
+    list-style: none;
+    position: relative;
+    left: -35px
+}
+
+aside ul a {
+    color: #fff;
+    display: block;
+    margin-top: 5px;
+    transition: transform .6s ease;
+}
+
+aside ul a:hover {
+    color: #1E90FF
+    transform: scale(1.05);
+}
+
+

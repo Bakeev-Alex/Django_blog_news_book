@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet", href="{% static 'news/css/main.css' %}">
+    <link rel="stylesheet", href="{% static 'news/css/index.css' %}">
+    <link rel="stylesheet", href="{% static 'news/css/article.css' %}">
+    <link rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <!-- боковая панель -->
+    <aside>
+        <img src="{% static 'news/img/book.png' %}">
+        <span class='logo'> MyFavoriteBook </span>
+        <h3>Навигация по сайту:</h3>
+        <ul>
+            <li><a href="{% url 'home' %}"><i class="fas fa-home"></i>&nbsp;Главная</a></li>
+            <li><a href="{% url 'about' %}"><i class="fas fa-address-card"></i>&nbsp;О нас</a></li>
+            <li><a href="{% url 'news_home' %}"><i class="far fa-newspaper"></i>&nbsp;Новости</a></li>
+            <li><a href="{% url 'contacts' %}"><i class="fas fa-paper-plane"></i>&nbsp;Контакты</a></li>
+            <li><a href="{% url 'create' %}"><button class="btn btn-info"><i class="fas fa-plus-circle"></i>Добавить запись</button></a></li>
+        </ul>
+    </aside>
+    <!-- основной страница -->
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+</body>
+</html>

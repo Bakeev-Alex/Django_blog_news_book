@@ -1,0 +1,26 @@
+/* css новостей */
+
+.alert-warning {
+    margin-top: 20px;
+    background: #eee;
+    border: 5px solid #778899;
+    padding: 20px;
+    width: 70%;
+    left: 120px;
+}
+
+main .alert-warning p {
+    text-align: center;
+}
+
+form {
+    margin-left: 25%;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
